@@ -1,5 +1,7 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
+rewriteCond %{http_host} ^91the.top [NC]
+rewriteRule ^(.*)$ http://www.91the.top/$1 [L,R=301]
 # 下面是在根目录，文件夹要修改路径，如 /oldtang/
 RewriteBase /
 RewriteCond %{REQUEST_FILENAME} !-f
