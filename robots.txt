@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /tag/
+#tag暂时屏蔽，太多相同页面
+
+User-agent: Mediapartners-Google
+Allow: /
