@@ -22,7 +22,21 @@ $this->need('header.php');
 </div>
 </article>
 <?php endif; ?>
+<?php $i = 0; ?>
 <?php while($this->next()): ?>
+    <?php $i ++; ?>
+    <?php if($i % 3 == 0): ?>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-format="fluid"
+         data-ad-layout-key="-4j+eb+20-64+7m"
+         data-ad-client="ca-pub-9395958650601631"
+         data-ad-slot="6998414192"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    <?php endif; ?>
 <article class="post<?php if ($this->options->PjaxOption && $this->hidden): ?> protected<?php endif; ?>">
 <h2 class="post-title"><a href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h2>
 <ul class="post-meta">
