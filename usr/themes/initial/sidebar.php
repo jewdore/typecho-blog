@@ -77,9 +77,14 @@
 <li class="more"><a href="<?php echo FindContents('page-links.php', 'order', 'a', 1)[0]['permalink']; ?>">查看更多...</a></li>
 <?php endif; ?>
 </ul>
-    <?php Links_Plugin::output(); ?>
 </section>
 <?php endif; ?>
+    <section class="widget">
+        <h3 class="widget-title">链接</h3>
+        <ul class="widget-tile">
+            <?php Links_Plugin::output(); ?>
+        </ul>
+    </section>
 <?php if (!empty($this->options->sidebarBlock) && in_array('ShowOther', $this->options->sidebarBlock)): ?>
 <section class="widget">
 <h3 class="widget-title">其它</h3>
